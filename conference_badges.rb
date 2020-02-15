@@ -16,7 +16,8 @@ def batch_badge_creator(names)
   badge_messages
 end
 
-def assign_rooms(name, room_number)
+def assign_rooms(name)
+  room_number = 0
   # should return a list of messages and room assignments: "Hello, Steve! You'll be assigned to room 1!"
 end
 
