@@ -17,13 +17,14 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(names)
+  new_array
   room_number = 1
 
   names.each do |name|
-    "Hello, #{name}! You'll be assigned to room #{room_number}!"
+    new_array << "Hello, #{name}! You'll be assigned to room #{room_number}!"
     room_number += 1
   end
-  # should return a list of messages and room assignments: "Hello, Steve! You'll be assigned to room 1!"
+  new_array
 end
 
 def printer()
