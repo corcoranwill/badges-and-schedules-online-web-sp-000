@@ -27,6 +27,7 @@ def assign_rooms(names)
   room_messages
 end
 
+
 def printer(badge_messages, room_messages)
   badge_messages.each do |msg|
     puts msg
