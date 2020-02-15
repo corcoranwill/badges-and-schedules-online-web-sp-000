@@ -17,19 +17,21 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(names)
-  new_array = []
+  room_messages = []
   room_number = 1
 
   names.each do |name|
-    new_array << "Hello, #{name}! You'll be assigned to room #{room_number}!"
+    room_messages << "Hello, #{name}! You'll be assigned to room #{room_number}!"
     room_number += 1
   end
-  new_array
+  room_messages
 end
 
-def printer()
-  # should first output the result of batch_badge_creator
-  # output assign_rooms
-  # then output the badges and room assignments
-  # make sure you are iterating through your badges and room assignment lists
+def printer(badge_messages, room_messages)
+  badge_messages.each do |msg|
+    puts msg
+  end
+  room_messages.each do |msg|
+    puts msg
+  end
 end
